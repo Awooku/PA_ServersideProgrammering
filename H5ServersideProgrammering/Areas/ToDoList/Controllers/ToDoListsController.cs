@@ -19,9 +19,9 @@ namespace H5ServersideProgrammering.Areas.ToDoList.Controllers
     {
         private readonly TestContext _context;
         private readonly IDataProtector _dataProtector;
-        private readonly CrytpExample _crytpExample;
+        private readonly CryptExample _crytpExample;
 
-        public ToDoListsController(TestContext context, IDataProtectionProvider dataProtector, CrytpExample crytpExample)
+        public ToDoListsController(TestContext context, IDataProtectionProvider dataProtector, CryptExample crytpExample)
         {
             _context = context;
             _crytpExample = crytpExample;

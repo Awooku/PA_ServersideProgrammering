@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace H5ServersideProgrammering.Codes
 {
-    public class CrytpExample
+    public class CryptExample
     {
         public string Encrypt(string payload, IDataProtector _protector)
         {

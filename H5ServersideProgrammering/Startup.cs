@@ -34,7 +34,7 @@ namespace H5ServersideProgrammering
             services.AddSingleton<Class1>();
             services.AddTransient<HashingExample>();
             services.AddTransient<MyUserRoleHandler>();
-            services.AddTransient<CrytpExample>();
+            services.AddTransient<CryptExample>();
 
             services.AddDataProtection();
 

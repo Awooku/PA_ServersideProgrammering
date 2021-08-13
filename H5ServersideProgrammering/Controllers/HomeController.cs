@@ -22,7 +22,7 @@ namespace H5ServersideProgrammering.Controllers
         private readonly IServiceProvider _serviceProvider;
         private readonly MyUserRoleHandler _myUserRoleHandler;
         private readonly IDataProtector _dataProtector;
-        private readonly CrytpExample _crytpExample;
+        private readonly CryptExample _cryptExample;
 
         public HomeController(
             ILogger<HomeController> logger, 
@@ -31,14 +31,14 @@ namespace H5ServersideProgrammering.Controllers
             IServiceProvider serviceProvider,
             MyUserRoleHandler myUserRoleHandler,
             IDataProtectionProvider dataProtector,
-            CrytpExample crytpExample)
+            CryptExample crytpExample)
         {
             _logger = logger;
             _class1 = class1;
             _hashingExample = hashingExample;
             _serviceProvider = serviceProvider;
             _myUserRoleHandler = myUserRoleHandler;
-            _crytpExample = crytpExample;
+            _cryptExample = crytpExample;
             _dataProtector = dataProtector.CreateProtector("MyProject.MyClass.SomeUniqName");
         }
 
@@ -52,8 +52,8 @@ namespace H5ServersideProgrammering.Controllers
             string myText2 = _class1.GetText2();
             string myHashedText = _hashingExample.GetHashedText_MD5(txt);
 
-            string myEncryptText = _crytpExample.Encrypt(txt3, _dataProtector);
-            string myDecryptText = _crytpExample.Decrypt(myEncryptText, _dataProtector);
+            string myEncryptText = _cryptExample.Encrypt(txt3, _dataProtector);
+            string myDecryptText = _cryptExample.Decrypt(myEncryptText, _dataProtector);
 
             IndexModel myModel = new IndexModel() { Text1 = myHashedText, Text2 = myText2, Text3 = myEncryptText, Text4 = myDecryptText };
 
