@@ -21,7 +21,6 @@
   <ItemGroup>
     <Folder Include="Areas\ToDoList\Data\" />
     <Folder Include="Areas\ToDoList\Models\" />
-    <Folder Include="Files\" />
   </ItemGroup>
 
 </Project>
