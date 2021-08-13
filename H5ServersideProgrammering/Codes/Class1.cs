@@ -9,7 +9,7 @@ namespace H5ServersideProgrammering.Codes
     {
         public string GetText()
         {
-            return "Hello Niels";
+            return "Hello PA";
         }
 
         public string GetText2()
